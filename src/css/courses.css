@@ -1,0 +1,66 @@
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.courses .course {
+  width: calc(25% - 20px);
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .courses .course {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .courses .course {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .courses .course {
+    width: 100%;
+  }
+}
+
+.courses .course .course-img img {
+  width: 100%;
+}
+
+.courses .course .course-title {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.courses .course .course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.courses .course .course-info .course-time .fa {
+  margin-left: 5px;
+}
+
+.courses .course .course-info .course-price {
+  color: white;
+  background-color: blue;
+  padding: 5px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,64 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 270px;
+  height: 100vh;
+  margin-top: 54px;
+  background-color: white;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar .sidebar-links ul {
+  padding: 10px 20px;
+}
+
+.sidebar .sidebar-links .nav-item {
+  padding: 0.7rem 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-links .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #999;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  display: flex !important;
+}
+
+.sidebar .sidebar-links .nav-item:hover .nav-link {
+  color: black;
+}
+
+.sidebar .sidebar-links .nav-item .nav-link .nav-icon {
+  margin-left: 0.5rem;
+}
+
+.sidebar .sidebar-links .nav-item .badge-count {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #c00;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 5px;
+}

@@ -1,0 +1,165 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+  .contact {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.contact .section-title {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .contact .section-title {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.contact .section-title h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact .section-title .fa {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.contact .contact-form {
+  border: 1px solid blue;
+}
+
+.contact .contact-form .form-header {
+  text-align: center;
+  color: white;
+  background-color: #17a2b8;
+  width: 450px;
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .contact .contact-form .form-header {
+    width: 100%;
+  }
+}
+
+.contact .contact-form .form-header h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .contact .contact-form .form-header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.contact .contact-form .form-header .fa-envelope {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 576px) {
+  .contact .contact-form .form-header .fa-envelope {
+    font-size: 1.2rem;
+  }
+
+  .contact .contact-form .form-header p {
+    font-size: 0.8rem;
+  }
+}
+
+.contact .contact-form .form-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.contact .contact-form .form-body .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+}
+
+.contact .contact-form .form-body input,
+.contact .contact-form .form-body textarea {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  font-family: "BYekan";
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  color: #495057;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .contact .contact-form .form-body input,
+  .contact .contact-form .form-body textarea {
+    font-size: 0.8rem;
+  }
+}
+
+.contact .contact-form .form-body textarea {
+  resize: none;
+}
+
+.contact .contact-form .form-body .input-group .fa {
+  position: absolute;
+  right: 0;
+  color: #17a2b8;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+}
+
+.contact .contact-form .form-body button {
+  width: 100%;
+  padding: 10px;
+  font-family: "BYekan";
+  font-size: 1rem;
+  color: white;
+  background-color: #17a2b8;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .contact .contact-form .form-body button {
+    font-size: 0.8rem;
+  }
+}
+
+.contact .contact-form .form-body button:hover {
+  background-color: #138496;
+}

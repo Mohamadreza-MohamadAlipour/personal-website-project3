@@ -1,0 +1,75 @@
+.admin-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+@media (max-width: 576px) {
+  .admin-navbar {
+    flex-wrap: wrap;
+  }
+}
+
+.admin-navbar .navbar-brand {
+  width: 270px;
+  padding: 15px;
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 576px) {
+  .admin-navbar .navbar-brand {
+    width: auto;
+  }
+}
+
+.admin-navbar .post-count,
+.admin-navbar .course-count {
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+@media (max-width: 576px) {
+  .admin-navbar .post-count,
+  .admin-navbar .course-count {
+    width: 50%;
+  }
+}
+.admin-navbar .post-count span,
+.admin-navbar .course-count span {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: orange;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
+
+.logout-style {
+  color: rgba(255, 255, 255, 0.61) !important;
+  padding: 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.logout-style:hover {
+  color: white !important;
+}

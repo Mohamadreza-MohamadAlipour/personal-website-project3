@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 400px) {
+  * {
+    line-height: 1.5rem;
+  }
+}
+
+@font-face {
+  font-family: "BYekan";
+  src: url("./fonts/Yekan.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  direction: rtl;
+  font-family: BYekan !important;
+  background: url("./image/light-grey-terrazzo.png");
+}

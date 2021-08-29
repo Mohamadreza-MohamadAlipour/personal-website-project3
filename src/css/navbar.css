@@ -1,0 +1,76 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+.navbar .navbar-brand {
+  width: 270px;
+  padding: 15px;
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    width: auto;
+  }
+}
+
+.navbar .searchbar {
+  background-color: rgba(255, 255, 255, 0.199);
+  border: none;
+  outline: none;
+  width: 70%;
+  padding: 15px 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: "BYekan";
+}
+
+.navbar .searchbar:focus {
+  background-color: white;
+}
+
+.navbar .searchbar::placeholder {
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .navbar .searchbar {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .searchbar {
+    width: 100%;
+  }
+}
+
+.login-style {
+  color: rgba(255, 255, 255, 0.61) !important;
+  padding: 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.login-style:hover {
+  color: white !important;
+}
